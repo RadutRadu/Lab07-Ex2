@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title> Radut Radu Cristian </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body id="font">
+         
+          <h1>Date de indentificare</h1>
+            <h2><p id="demo"> Nume-prenume: Radut Radu Cristian </h2> </p>
+            <p><img src="poza.PNG" id="imagine" width="400"> </p>
+            <p><h3> Email: radu.radut@yahoo.com</h3></P>
+
+        <div onmousemove="mouseIn()" onmouseout="mouseOut()">
+            <p id="numar" > 2002 </p>
+        </div>
+
+            <p><h2><i>Scopul educatiei este inaintarea in cunoastere si distingerea adevarului. </i></h2></p>
+
+            <button onclick="nume()">Alta viata</button>
+
+            <p id="demo"></p>
+            
+
+            <script>
+                function nume() {
+                document.getElementById("demo").innerHTML = "Frontend developer  - Radut Radu Cristian ";   
+               
+                document.getElementById("realizari").innerHTML = "Realizari";                               
+                document.getElementById("site").innerHTML = "Site Automobile - CARLUX";
+                document.getElementById("site2").innerHTML = "Design Web - Plainfragrances.com";
+                document.getElementById("site3").innerHTML = "Design principal afis - PiDay";
+
+                document.getElementById("imagine").src = "poza2.jpg";
+                document.getElementById("imagine").style.opacity = "0.8";
+
+                document.body.style.backgroundImage = "url('bg4.png')";
+
+                document.getElementById("font").style.fontFamily = "Arial, Helvetica, sans-serif";
+                }
+
+                var x = 2002;
+                var y = 2020;
+
+                function mouseIn() {
+                document.getElementById("numar").innerHTML = y-x;
+                }
+
+                function mouseOut() {
+                document.getElementById("numar").innerHTML = x;
+                }
+
+
+            </script>
+
+
+            
+         <table style="width:100%">
+            <tr>
+                <th>MATERIE</th>
+                <th>AN</th>
+                <th>LINK</th>
+            </tr>
+            <tr>
+                <td>Informatica Aplicata</td>
+                <td>I</td>
+                <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/06.pdf">Fisa disciplina</a></td>
+            </tr>
+             <tr>
+                <td>Televiziune</td>
+                 <td>IV</td>
+                 <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/44.pdf">Fisa disciplina</a></td>
+             </tr>
+            <tr>
+                 <td>Tehnici CAD</td>
+                 <td>II</td>
+                 <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/28.pdf">Fisa disciplina</a</td>
+             </tr>
+            </table>
+            <h2><p id="realizari">Pasiuni/Hobby-uri</p></h2>
+            <ul>
+                <li id="site"> Design Graphic </li>
+                <li id="site2">  Investitii </li>
+                <li id="site3"> Dezvoltare personala </li>
+            </ul>
+
+            <form action="/action_page.php">
+                <label for="email">Introduceti email:</label>
+                <input type="email" id="email" name="email">
+                <input type="submit">
+              </form>
+            
+    </body>
+</html>
